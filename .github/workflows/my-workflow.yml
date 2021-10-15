@@ -12,11 +12,12 @@ jobs:
         uses: ./.github/actions/hello-world
 
       - name: haha
+        id: joker
         uses: ./.github/actions/joke-action
 
       - name: create-issue
         uses: ./.github/actions/issue-maker
         with:
-          joke: ${{steps.haha.conclusion}}
-          issue-title: ${{steps.haha.outcome}}
+          joke: ${{steps.joker.conclusion}}
+          issue-title: ${{steps.joker.outcome}}
           repo-token: ${{secrets.GITHUB_TOKEN}}
