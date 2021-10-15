@@ -10,6 +10,6 @@ const core = require("@actions/core");
 
 // run();
 core.setOutput('outputKey', 'outputVal');
-const joke = await getJoke();
+const joke = getJoke();
 console.log(joke);
 core.setOutput("joke-output", joke);
