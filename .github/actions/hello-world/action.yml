@@ -17,6 +17,6 @@ inputs:
     description: "a third greeting"
     required: false
 
-    runs:
+runs:
   using: "node12"
   main: "main.js"
