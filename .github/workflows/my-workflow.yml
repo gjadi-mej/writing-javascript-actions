@@ -17,6 +17,6 @@ jobs:
       - name: create-issue
         uses: ./.github/actions/issue-maker
         with:
-          joke: ${{steps.haha.outputs.joke-output}}
+          joke: ${{steps.haha.conclusion}}
+          issue-title: ${{steps.haha.outcome}}
           repo-token: ${{secrets.GITHUB_TOKEN}}
-          issue-title: ${{steps.haha.outputs.outputKey}}
