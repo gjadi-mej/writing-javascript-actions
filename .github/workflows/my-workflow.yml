@@ -20,6 +20,6 @@ jobs:
       - name: create-issue
         uses: ./.github/actions/issue-maker
         with:
-          joke: ${{steps.ha-ha.outputs.joke-output}}
+          joke: ${{steps.ha-ha.outputs.outputKey}}
           repo-token: ${{secrets.GITHUB_TOKEN}}
           issue-title: "a joke for me"
