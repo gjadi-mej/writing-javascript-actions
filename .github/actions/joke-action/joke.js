@@ -11,8 +11,8 @@ const options = {
     json: true
 };
 
-function getJoke() {
-    const res = request(options);
+async function getJoke() {
+    const res = await request(options);
     return res.joke;
 }
 
